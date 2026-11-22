@@ -1,0 +1,11 @@
+name: ubu-probe
+on:
+  workflow_dispatch:
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - name: probe
+        run: |
+          uname -a
+          echo "UBU RUNNER OK"
